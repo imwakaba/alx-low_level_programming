@@ -1,10 +1,8 @@
 #include <stdio.h>
 
 /**
- *main _entry point
-
- *print with proper grammar, but the outcome is a piece of art
-
+ * main _entry point
+ *
  * Return: Always 0 (success)
  */
 int main(void)
