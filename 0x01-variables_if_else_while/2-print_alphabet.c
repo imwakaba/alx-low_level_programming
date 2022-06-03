@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+/**
+ * main ENtry point of the program
+ * Description : using putchar to display alphabets a - z in lower case
+ * Return : Aways 0 (Success)
+ */
+int main(void)
+{
+	char low;
+
+	for (low = 'a'; low <= 'z'; low++)
+	putchar(low);
+	putchar('\n');
+
+	return (0);
+}
