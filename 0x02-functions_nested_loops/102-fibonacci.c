@@ -1,28 +1,30 @@
 #include <stdio.h>
 
 /**
-* print_to_98 - prints all natural numbers
-* from n to 98, followed by a new line
-*
-* @n: input number.
-*
-* Return: no return.
-*/
-void print_to_98(int n)
+ * main - print first 50 Fibonacci numbers
+ *
+ * Return: always 0
+ */
+int main(void)
 {
-	if (n > 98)
+	int i;
+	unsigned long a = 1;
+	unsigned long b = 2;
+	unsigned long c = 3;
+
+	printf("1, 2, ");
+	for (i = 0; i < 48; i++)
 	{
-	for (; n > 98; n--)
-		{
-		printf("%d, ", n);
-		}
+		c = a + b;
+		printf("%ld", c);
+		a = b;
+		b = c;
+
+		if (i != 47)
+			printf(", ");
 	}
-	else if (n < 98)
-	{
-		for (; n < 98; n++)
-		{
-		printf("%d, ", n);
-		}
-	}
-	printf("%d\n", n);
+	printf("\n");
+
+	return (0);
 }
+
