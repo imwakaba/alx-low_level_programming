@@ -8,7 +8,7 @@
 *
 * Return: no return.
 */
-void _first_50_numbers(int n)
+void print_to_50(int n)
 {
 	if (n > 50)
 	{
